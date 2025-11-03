@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>meteo🌤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" role="application" aria-label="weather app">
+<header>
+<div class="logo">☀️</div>
+<div>
+<h1>meteo</h1>
+<p class="sub">  Écris le nom de la ville ou du pays pour voir la météo actuelle.🌍</p>
+</div>
+</header>
+
+
+<div class="search" aria-hidden="false">
+<input id="q" type="search" placeholder="exemple: Casablanca ou Paris,..." />
+<button id="go">🔍</button>
+</div>
+
+
+<div id="places" class="picker" aria-live="polite"></div>
+
+
+<div id="out"></div>
+
+
+<footer>Ne nécessite aucune clé API — le résultat provient de OpenStreetMap et Open-Meteo</footer>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
